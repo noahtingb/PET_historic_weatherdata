@@ -1,1 +1,1 @@
-{"Gothenburg": {"latitude": 57.6801, "longitude": 12.0259, "elevation": 9, "hourly": {"time":"1940-01-01 00:00:00"}}}
+{"Gothenburg": {"latitude": 57.6801, "longitude": 12.0259, "elevation": 9, "hourly": {"time":["1940-01-01 00:00:00"],"Ta":[9],"RH":[85],"Ws":[2.72]}}}
