@@ -127,9 +127,11 @@ import datetime
 def strtotimes(times_str=[],lower_bound=0,upperbound=1000000):
     return [datetime.datetime.strptime(strtime,"%Y-%m-%d %H:%M:%S") for strtime in times_str[lower_bound,max(lower_bound,min(upperbound,len(times_str)))]]
 
-#TODO date to index
-#TODO loppa för värden
-#TODO importa alla Tmrt och Pet som är relevanta
-#TODO plotta sedan dem enlig saker
-#TODO skriv allt i gruppchatten
+#TODO date to index (~30 min)
+#TODO loppa för värden (~1 h)
+#TODO importa alla Tmrt och Pet som är relevanta (~1 h)
+#TODO runna allting (~3 h)
+#TODO plotta sedan dem enlig saker (~1.5 h)
+#TODO skriv allt i gruppchatten (~5 min)
+#Allt som allt  (~5-9 h (5 kod, 2 väntande, 2 extra logg))
 
