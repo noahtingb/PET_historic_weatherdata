@@ -121,17 +121,32 @@ def exceltojsonEmpty(place="Gothenburg",fileold="historicweatherdata",filenew="o
 #createaempty
 if False:exceltojsonEmpty();
 
-
 #fix Times:
 import datetime
+def covert(strtime="1940-01-01 00:00:00"):
+    return datetime.datetime.strptime(strtime,"%Y-%m-%d %H:%M:%S")
 def strtotimes(times_str=[],lower_bound=0,upperbound=1000000):
     return [datetime.datetime.strptime(strtime,"%Y-%m-%d %H:%M:%S") for strtime in times_str[lower_bound,max(lower_bound,min(upperbound,len(times_str)))]]
 
-#TODO date to index (~30 min)
-#TODO loppa för värden (~1 h)
-#TODO importa alla Tmrt och Pet som är relevanta (~1 h)
-#TODO runna allting (~3 h)
+#DONE date to index (~30 min)
+def loppa(startstr="2023-12-31 00:00:00",endstr="2025-01-01 23:00:00",places=["Gothenburg"],fileold="historicweatherdata",funks=[],zerostr="1940-01-01 00:00:00"):
+    starttime=datetime.datetime.strptime(startstr)
+    endtime=datetime.datetime.strptime(endstr)
+    zerotime=datetime.datetime.strptime(zerostr)
+    timedif=(endtime.hour-starttime.hour)+1
+    index0=(starttime.hour-zerotime.hour)
+#DONE loppa för värden (~1 h)
+    for place in places:
+        data=loada("jsons//"+fileold+".json")[place]
+        data["Ta"],data["RH"],data["Ws"],data["time"]=data["hourly"]["Ta"][index0:index0+timedif],data["hourly"]["RHs"][index0:index0+timedif],data["hourly"]["Wss"][index0:index0+timedif],data["hourly"]["time"][index0:index0+timedif]
+        data["horly"]=None
+        #data={place:{"latitude":file["latitude"], "longitude":file["longitude"], "elevation":file["elevation"],"time":time,"Ta":data["hourly"]["Tas"][index0:index0+timedif],"RH":data["hourly"]["RHs"][index0:index0+timedif],"Ws":data["hourly"]["Wss"][index0:index0+timedif]}}
+        for f in funks:
+            f(data)
+#TODO loppa dem (~15 min)
+
+#TODO importa alla Tmrt och Pet som är relevanta (~1-3 h)
+#TODO runna allting (~1-3 h)
 #TODO plotta sedan dem enlig saker (~1.5 h)
 #TODO skriv allt i gruppchatten (~5 min)
 #Allt som allt  (~5-9 h (5 kod, 2 väntande, 2 extra logg))
-
