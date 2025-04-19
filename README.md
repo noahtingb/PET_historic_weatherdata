@@ -6,12 +6,12 @@ Filen jsons//oursmaller.json innehåller data för alla parametrar för platsen 
 
 Jsonfilerna är uppbyggada som: {place1:params,place2:params}
 
-Följande platser är inkluderade: \
+Följande platser är inkluderade: 
 - Gothenburg: Göteborg ((57.6801°,12.0259°) 9 möh)
 
-Förklaring av parametrar: \
-- PET_F: Fredriks PET     [°C] (list[float] 1e-2) \
-- PET_N: Noahs PET        [°C] (list[float] 1e-2) \
+Förklaring av parametrar: 
+- PET_F: Fredriks PET     [°C] (list[float] 1e-2) 
+- PET_N: Noahs PET        [°C] (list[float] 1e-2) 
 - PET_B: BioMeteo:s PET   [°C] (list[float] 1e-2) \
 - Tmrt_F: Fredriks Tmrt   [°C] (list[float] 1e-2) \
 - Tmrt_N: Noahs Tmrt      [°C] (list[float] 1e-2) \
