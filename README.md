@@ -4,8 +4,7 @@ Därefter ska alla if <True|False>: <something>; vara False förutom <whattoplot
 Välj därefter parametrarna som vill undersökas och du kan ändra karg till andra parametrar.
 Filen jsons//oursmaller.json innehåller data för alla parametrar för platsen Göteborg mellan 00:00:00 den 2023-12-31 och 23:00:00 den 2025-01-01.
 
-Jsonfilerna är uppbyggada som: \
-{place1:params,place2:params}
+Jsonfilerna är uppbyggada som: {place1:params,place2:params}
 
 Följande platser är inkluderade: \
 - Gothenburg: Göteborg ((57.6801°,12.0259°) 9 möh)
