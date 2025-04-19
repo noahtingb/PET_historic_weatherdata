@@ -23,5 +23,7 @@ Jsonfilerna är uppbyggada som: {place1:params,place2:params}
 - longitude:  Longitud        [°]   (float -180-180) 
 - latitude:   Breddgrad       [°]   (float -90-90) 
 - altitude:   Höjd över havet [m]   (int 0-9000) 
-\ \ \
+\
+\
+\
 old name: PET_historic_weatherdata
