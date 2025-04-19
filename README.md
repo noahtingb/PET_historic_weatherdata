@@ -24,5 +24,4 @@ Förklaring av parametrar:
 - latitude:   Breddgrad       [°]   (float -90-90) 
 - altitude:   Höjd över havet [m]   (int 0-9000) 
 \
-\
 old name: PET_historic_weatherdata
