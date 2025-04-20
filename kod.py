@@ -286,25 +286,64 @@ import matplotlib.pyplot as plt
 def plota(x,y,title="",xlabel="",ylabel="",karg={}):
     alpha=1 if (karg.get("alpha")==None) else karg["alpha"]
     linewidths=1 if (karg.get("linewidths")==None) else karg["linewidths"]
-    print(alpha,linewidths)
+    if karg.get("color")==None: color=['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2','#7f7f7f', '#bcbd22', '#17becf']
+    elif type(karg.get("color"))!=type([]):  color=[karg.get("color")]
+    else: color=karg.get("color")
+    
+
+    #print(alpha,linewidths)
     plt.title(title)
-    plt.scatter(x=x,y=y,alpha=alpha,linewidths=linewidths)
+    if type(x[0])==type([]):
+        for i,v in enumerate(x):
+            plt.scatter(x=v,y=y[i],alpha=alpha,linewidths=linewidths,color=color[i%len(color)])
+    else:
+        plt.scatter(x=x,y=y,alpha=alpha,linewidths=linewidths,color=color[0])
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     if karg.get("linemaxminsomething")==True:
+        colorline="#ff7f0e" if (karg.get("colorline")==None) else karg["colorline"]
         lista=[min(np.min(np.array(x)),np.min(np.array(y))),min(np.max(np.array(x)),np.max(np.array(y)))]
-        plt.plot(lista,lista,linewidth=1,color="orange")
-def whattoplot(x_key="Tmrt_F",y_key="Tmrt_N",place="Gothenburg",oldfile="oursmaller"):
+        plt.plot(lista,lista,linewidth=1,color=colorline)
+def whattoplot(x_keys=["Tmrt_F"],y_keys=["Tmrt_N"],place="Gothenburg",oldfile="oursmaller",unitx="°C",unity="°C",karg={"alpha":0.1,"linewidths":0.1,"linemaxminsomething":True,"color":['#1f77b4', '#2ca02c']}):
+    """
+    This function is used to plot all the data
+    
+    Created by:
+    Noah Tingbratt 2025-04-20, noah.tingbratt@gmail.com,
+    Chalmers Tekniska Högskola, Sweden,
+    Bachelor Thesis
+    
+    Input parameters:
+     - x_keys: List of what params to campare on the x axis.
+     - location: List of what params to campare on the y axis. 
+     - place: The place to plot default: "Gothenburg".
+     - oldfile: The file with the data default: "oursmaller"
+     - unitx: The unit of the x-axis default: "°C"
+     - unity: The unit of the x-axis default: "°C"
+     - karg: args for the plot as for example "alpha":alpha, "linewidths":width of the scatters, "linemaxminsomething":stright line to compare, "color": list of colors
+    
+    Output parameters: 
+     - None:
+
+    :param x_keys:
+    :param location:
+    :param place:
+    :param oldfile:
+    :param unitx:
+    :param unity:
+    :param karg:        
+    :return:
+    """
     data=loada("jsons//"+oldfile+".json") 
-    plota(x=data[place][x_key],y=data[place][y_key],title="Comparsion",xlabel=f"{x_key} [°C]",ylabel=f"{y_key} [°C]",karg={"alpha":0.1,"linewidths":0.1,"linemaxminsomething":True})
+    print(data[place]["longitude"],data[place]["latitude"],data[place]["altitude"])
+    plota(x=[data[place][x_key] for x_key in x_keys],y=[data[place][y_key] for y_key in y_keys],title="Comparsion",xlabel=" ".join(x_keys)+f" [{unitx}]",ylabel=" ".join(y_keys)+f" [{unity}]",karg=karg)
     plt.show()
-if True: whattoplot();
+if False: whattoplot();
 #DONE importa alla Tmrt och Pet som är relevanta (~1-3 h)
 #DONE fixa lopen
 #DONE runna allting (~1-3 h) (small)
 
-#TODO plotta sedan dem enlig saker (~1.5 h)
-#TODO skriv allt i gruppchatten (~5 min)
+#DONE plotta sedan dem enlig saker (~1.5 h)
 #Allt som allt  (~5-9 h (5 kod, 2 väntande, 2 extra logg))
-
-
+#TODO skriv allt i gruppchatten (~5 min)
+#TODO plotta fint (? h)
