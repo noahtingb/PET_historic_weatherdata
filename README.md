@@ -26,4 +26,10 @@ Jsonfilerna är uppbyggada som: {place1:params,place2:params}
 \
 \
 \
-old name: PET_historic_weatherdata
+main file: koden.py (hard) or plotfile.py (easy) \
+(plotfile.py runnar den sista funktionen i koden.py) \
+Krav för att köra programen:
+ - Filen jsons\oursmaller.json existerar
+\
+\
+\old name: PET_historic_weatherdata
