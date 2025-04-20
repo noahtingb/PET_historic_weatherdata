@@ -23,15 +23,14 @@ Jsonfilerna är uppbyggada som: {place1:params,place2:params}
 - longitude:  Longitud        [°]   (float -180-180) 
 - latitude:   Breddgrad       [°]   (float -90-90) 
 - altitude:   Höjd över havet [m]   (int 0-9000) 
-\
-\
-\
+
 #### main file: 
  - koden.py (hard)
  - plotfile.py (easy) \
-(plotfile.py runnar den sista funktionen i koden.py) \
+(plotfile.py runnar den sista funktionen i koden.py)
+
 #### Krav för att köra programen:
  - Filen jsons\oursmaller.json existerar
-\
-\
-\old name: PET_historic_weatherdata
+
+#### Gamla namn på mappen
+ - PET_historic_weatherdata
