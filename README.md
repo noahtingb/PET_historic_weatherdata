@@ -26,9 +26,11 @@ Jsonfilerna är uppbyggada som: {place1:params,place2:params}
 \
 \
 \
-main file: koden.py (hard) or plotfile.py (easy) \
+#### main file: 
+ - koden.py (hard)
+ - plotfile.py (easy) \
 (plotfile.py runnar den sista funktionen i koden.py) \
-Krav för att köra programen:
+#### Krav för att köra programen:
  - Filen jsons\oursmaller.json existerar
 \
 \
