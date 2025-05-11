@@ -1,6 +1,6 @@
 # PET analys 
 Till kandidatarbete TIFX16-VT25-01
-#### De olika delarna
+#### De olika delarna i den mörka Fysik-Jungeln
  - https://github.com/noahtingb/sakerlopning_analys/ :
      - Nuvarande mapp med mycket analys i
  - https://github.com/noahtingb/PET_projekt_big/     :
