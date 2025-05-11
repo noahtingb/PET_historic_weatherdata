@@ -2,11 +2,11 @@
 Till kandidatarbete TIFX16-VT25-01
 #### De olika delarna
  - https://github.com/noahtingb/sakerlopning_analys/ :
-     nuvarande
+     - Nuvarande mapp med mycket analys i
  - https://github.com/noahtingb/PET_projekt_big/     :
-     stor fil med mycket analys på
+     - Stor fil med mycket analys på
  - https://github.com/noahtingb/runwise/             :
-     kompakt fil med programet på och enkel hantering
+     - Kompakt fil med programet på och enkel hantering
 
 För plottande av en lättare graf kontrollera att alla paket är nedladdade annars kommentera ut dem och sätt paketet till None. 
 Därefter ska alla if <True|False>: <something>; vara False förutom <whattoplot> som ska vara True.
