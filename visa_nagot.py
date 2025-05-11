@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import json,datetime
-from com.aton import getTmrtPET
+from antonpanton37_kod.processing import getTmrtPET
 import numpy as np
 def covert(strtime="1940-01-01 00:00:00"):
     return datetime.datetime.strptime(strtime,"%Y-%m-%d %H:%M:%S")
