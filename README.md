@@ -1,4 +1,4 @@
-# PET historic weatherdata
+# PET analys 
 Till kandidatarbete TIFX16-VT25-01
 #### De olika delarna
  - https://github.com/noahtingb/sakerlopning_analys/ :
