@@ -174,7 +174,7 @@ def getPETNoah(Tmrt,params,indexforparams):
         form={"Ta":params["Ta"][indexforparams],"RH":params["RH"][indexforparams],"Ws":params["Ws"][indexforparams],"Tmrt":Tmrt}
         resultPET2=noahtingb.indexflaskPET(form)
         return float(resultPET2)
-import antonpanton37.processing as apro
+import antonpanton37_kod.processing as apro
 def getTmrtPETanton(params,indexforparams):
         form={"Ta":params["Ta"][indexforparams],"RH":params["RH"][indexforparams],"Ws":params["Ws"][indexforparams],"time":params["time"][indexforparams],
               "longitude":params["longitude"], "latitude":params["latitude"], "altitude":params["altitude"]}
