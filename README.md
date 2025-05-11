@@ -4,7 +4,7 @@ Till kandidatarbete TIFX16-VT25-01
  - https://github.com/noahtingb/sakerlopning_analys/ :
      - Nuvarande mapp med mycket analys i
  - https://github.com/noahtingb/PET_projekt_big/     :
-     - Stor fil med mycket analys på
+     - Stor map med många jobbig program med mycket analys på och lite allt möjligt
  - https://github.com/noahtingb/runwise/             :
      - Kompakt fil med programet på och enkel hantering
 
