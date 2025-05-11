@@ -5,6 +5,8 @@ Till kandidatarbete TIFX16-VT25-01
      - Nuvarande mapp med mycket analys i
  - https://github.com/noahtingb/PET_projekt_big/     :
      - Stor map med många jobbig program med mycket analys på och lite allt möjligt
+ - https://github.com/noahtingb/Sakerlopning-first_mapp
+     - Stor map med många jobbig program och många större filer. Första ideerna spånades här
  - https://github.com/noahtingb/runwise/             :
      - Kompakt fil med programet på och enkel hantering
 
