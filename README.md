@@ -40,7 +40,7 @@ Jsonfilerna är uppbyggada som: {place1:params,place2:params}
 #### main file: 
  - kod.py (hard)
  - plotfile.py (easy) \
-(plotfile.py runnar den sista funktionen i koden.py)
+(plotfile.py runnar den föredetta sista funktionen i koden.py)
 
 #### Krav för att köra programen:
  - Filen jsons\oursmaller.json existerar
