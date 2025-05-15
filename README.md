@@ -1,8 +1,15 @@
 # PET analys 
 Till kandidatarbete TIFX16-VT25-01
-Utvecklat enbart av Noah
+
+De mapparna som inte uppenbart är kodade av andra eller beskrivet vem som kodare är, enbart kodade av Noah.
+
 Se nedan för den modifierade PET och prognos:
-https://noahtingb.github.io/sakerlopning_lp3_api/ (frontenden är till stor del ai genererad och backenden har tagit insperation ifrån Anton)
+
+https://noahtingb.github.io/sakerlopning_lp3_api/ 
+
+(frontenden är till stor del ai genererad och backenden har tagit insperation ifrån Anton)
+
+
 
 #### De olika delarna i den mörka Fysik-Jungeln
  - https://github.com/noahtingb/sakerlopning_analys/ :
