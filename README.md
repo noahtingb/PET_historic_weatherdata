@@ -4,10 +4,8 @@ Till kandidatarbete TIFX16-VT25-01
 De mapparna som inte uppenbart är kodade av andra eller beskrivet vem som kodare är, enbart kodade av Noah.
 
 Se nedan för den modifierade PET och prognos:
-
-https://noahtingb.github.io/sakerlopning_lp3_api/ 
-
-(frontenden är till stor del ai genererad och backenden har tagit insperation ifrån Anton)
+ - https://noahtingb.github.io/sakerlopning_lp3_api/ 
+   (frontenden är till stor del ai genererad och backenden har tagit insperation ifrån Anton)
 
 
 
