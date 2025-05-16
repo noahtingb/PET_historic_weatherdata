@@ -1,6 +1,8 @@
 # PET analys 
 Till kandidatarbete TIFX16-VT25-01
 
+!!Under uppdatering!!
+
 De mapparna som inte uppenbart är kodade av andra eller beskrivet vem som kodare är, enbart kodade av Noah. 
 
 Om ej annat angett har endast Copilot:s-slutförandefunktion används för kodandet.
