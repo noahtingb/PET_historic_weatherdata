@@ -5,7 +5,8 @@
 ### De mapparna som inte uppenbart är kodade av andra eller beskrivet vem som kodare är, enbart kodade av Noah. 
 ### Om ej annat angett har endast Copilot:s-slutförandefunktion används för kodandet.
 ### Se nedan för den modifierade PET och prognos:
-### https://noahtingb.github.io/sakerlopning_lp3_api/ (frontenden är till viss del AI genererad och backenden har tagit insperation ifrån Anton)
+### https://noahtingb.github.io/sakerlopning_lp3_api/ (
+##### frontenden är till viss del AI genererad och backenden har tagit insperation ifrån Anton)
 
 
 
